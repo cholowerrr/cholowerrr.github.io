@@ -1,0 +1,247 @@
+/* 
+misushi_checkout.css
+Dayrit, Gabriel Andrei G.
+Delos Santos, Hailey D.
+Pascual, Macline Jane T.
+Tayag, Michael D.  
+CYB-201/6INTROWEB 
+*/
+
+:root {
+    /**
+     * COLORS
+     */
+    --header-height: 3.5rem;
+    --gold-crayola: hsl(38, 61%, 73%);
+    --quick-silver: hsla(0, 0%, 65%, 1);
+    --davys-grey: hsla(30, 3%, 34%, 1);
+    --smoky-black-1: hsla(40, 12%, 5%, 1);
+    --smoky-black-2: hsla(30, 8%, 5%, 1);
+    --smoky-black-3: hsla(0, 3%, 7%, 1);
+    --eerie-black-1: hsla(210, 4%, 9%, 1);
+    --eerie-black-2: hsla(210, 4%, 11%, 1);
+    --eerie-black-3: hsla(180, 2%, 8%, 1);
+    --eerie-black-4: hsla(0, 0%, 13%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --white-alpha-20: hsla(0, 0%, 100%, 0.2);
+    --white-alpha-10: hsla(0, 0%, 100%, 0.1);
+    --black: hsla(0, 0%, 0%, 1);
+    --black-alpha-80: hsla(0, 0%, 0%, 0.8);
+    --black-alpha-15: hsla(0, 0%, 0%, 0.15);
+
+    /**
+     * TYPOGRAPHY
+     */
+    --body-font: 'DM Sans', sans-serif; /* Changed font */
+    --title-font: 'Forum', cursive; /* Changed font */
+    --subtitle-font: 'Dancing Script', cursive;
+
+    --biggest-font-size: 2.25rem;
+    --h1-font-size: var(--fontSize-title-2); /* Adjusted font size */
+    --h2-font-size: var(--fontSize-title-3); /* Adjusted font size */
+    --h3-font-size: var(--fontSize-title-4); /* Adjusted font size */
+    --normal-font-size: 1rem; /* Adjusted font size */
+    --small-font-size: var(--fontSize-body-3); /* Adjusted font size */
+    --smaller-font-size: var(--fontSize-body-4); /* Adjusted font size */
+    --font-medium: var(--weight-regular); /* Adjusted weight */
+    --font-semi-bold: var(--weight-bold); /* Adjusted weight */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/* Global Styles */
+body {
+    font-family: var(--body-font);
+    background-color: var(--eerie-black-1); /* Changed background color */
+    color: var(--quick-silver); /* Changed text color */
+    margin: 0;
+    margin-top: 40px;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    font-family: var(--title-font);
+    color: var(--gold-crayola); /* Changed title color */
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+}
+
+/* Form Styles */
+form {
+    background-color: var(--smoky-black-3);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 2rem auto;
+    font-size: var(--normal-font-size);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: var(--font-medium);
+    color: var(--gold-crayola); /* Changed label color */
+}
+
+input, select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--eerie-black-4); /* Changed border color */
+    border-radius: 4px;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--smoky-black-2); /* Changed input background color */
+    color: var(--quick-silver); /* Changed input text color */
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--gold-crayola); /* Changed focus border color */
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--gold-crayola); /* Changed button background color */
+    color: var(--eerie-black-1); /* Changed button text color */
+    border: none;
+    border-radius: 4px;
+    font-family: var(--body-font);
+    font-weight: var(--font-semi-bold);
+    font-size: var(--normal-font-size);
+    cursor: pointer;
+    transition: background-color var(--transition-1);
+}
+
+button:hover {
+    background-color: var(--davys-grey); /* Changed hover background color */
+}
+
+/* Delivery/Payment Details Visibility */
+#delivery-details, #card-details {
+    display: none;
+}
+
+#promo-code, #tip {
+    background-color: var(--smoky-black-1); /* Changed promo and tip background color */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    form {
+        padding: 1.5rem;
+    }
+}
+
+
+/* For devices with a max width of 1200px */
+@media screen and (max-width: 1200px) {
+    form {
+        max-width: 90%;
+        padding: 1.75rem;
+    }
+}
+
+/* For devices with a max width of 992px (Tablets) */
+@media screen and (max-width: 992px) {
+    form {
+        max-width: 80%;
+        padding: 1.5rem;
+    }
+
+    label {
+        font-size: 1.2rem; /* Adjusting label size */
+    }
+
+    input, select, button {
+        font-size: 1rem; /* Adjust input, select, and button text size */
+    }
+}
+
+/* For devices with a max width of 768px (Tablets and small screens) */
+@media screen and (max-width: 768px) {
+    form {
+        max-width: 100%;
+        padding: 1.25rem;
+    }
+
+    label {
+        font-size: 1.1rem;
+    }
+
+    input, select, button {
+        font-size: 0.95rem;
+    }
+}
+
+/* For devices with a max width of 576px (Phones) */
+@media screen and (max-width: 576px) {
+    form {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    input, select, button {
+        font-size: 0.9rem;
+    }
+}
+
+
+.checkout-container {
+    background-image: url('/MiSushi/misushi_images/shape-1.png'); /* Add your image path here */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    padding: 10rem; /* Adjust padding as needed */
+    border-radius: 10px; /* Optional: rounding the container edges */
+}
+
+#confirmation-prompt {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.prompt-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#close-prompt {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+#close-prompt:hover {
+    background-color: #555;
+}
+

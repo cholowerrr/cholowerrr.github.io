@@ -1,0 +1,295 @@
+
+/* 
+misushi_about.css
+Dayrit, Gabriel Andrei G.
+Delos Santos, Hailey D.
+Pascual, Macline Jane T.
+Tayag, Michael D.  
+CYB-201/6INTROWEB 
+*/
+:root {
+
+    /**
+    * COLORS
+    */
+
+    --gold-crayola: hsl(38, 61%, 73%);
+    --quick-silver: hsla(0, 0%, 65%, 1);
+    --davys-grey: hsla(30, 3%, 34%, 1);
+    --smoky-black-1: hsla(40, 12%, 5%, 1);
+    --smoky-black-2: hsla(30, 8%, 5%, 1);
+    --smoky-black-3: hsla(0, 3%, 7%, 1);
+    --eerie-black-1: hsla(210, 4%, 9%, 1);
+    --eerie-black-2: hsla(210, 4%, 11%, 1);
+    --eerie-black-3: hsla(180, 2%, 8%, 1);
+    --eerie-black-4: hsla(0, 0%, 13%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --white-alpha-20: hsla(0, 0%, 100%, 0.2);
+    --white-alpha-10: hsla(0, 0%, 100%, 0.1);
+    --black: hsla(0, 0%, 0%, 1);
+    --black-alpha-80: hsla(0, 0%, 0%, 0.8);
+    --black-alpha-15: hsla(0, 0%, 0%, 0.15);
+
+    /**
+    * GRADIENT COLOR
+    */
+
+    --loading-text-gradient: linear-gradient(90deg, transparent 0% 16.66%, var(--smoky-black-3) 33.33% 50%,  transparent 66.66% 75%);
+    --gradient-1: linear-gradient(to top,hsla(0, 0%, 0%, 0.9),hsla(0, 0%, 0%, 0.7),transparent);
+
+    /**
+    * TYPOGRAPHY
+    */
+
+    /* font-family */
+    --fontFamily-forum: 'Forum', cursive;
+    --fontFamily-dm_sans: 'DM Sans', sans-serif;
+
+    /* font-size */
+    --fontSize-display-1: calc(1.3rem + 6.7vw);
+    --fontSize-headline-1: calc(2rem + 2.5vw);
+    --fontSize-headline-2: calc(1.3rem + 2.4vw);
+    --fontSize-title-1: calc(1.6rem + 1.2vw);
+    --fontSize-title-2: 2.2rem;
+    --fontSize-title-3: 2.1rem;
+    --fontSize-title-4: calc(1.6rem + 1.2vw);
+    --fontSize-body-1: 2.4rem;
+    --fontSize-body-2: 1.6rem;
+    --fontSize-body-3: 1.8rem;
+    --fontSize-body-4: 1.6rem;
+    --fontSize-label-1: 1.4rem;
+    --fontSize-label-2: 1.2rem;
+
+    /* font-weight */
+    --weight-regular: 400;
+    --weight-bold: 700;
+
+    /* line-height */
+    --lineHeight-1: 1em;
+    --lineHeight-2: 1.2em;
+    --lineHeight-3: 1.5em;
+    --lineHeight-4: 1.6em;
+    --lineHeight-5: 1.85em;
+    --lineHeight-6: 1.4em;
+
+    /* letter-spacing */
+    --letterSpacing-1: 0.15em;
+    --letterSpacing-2: 0.4em;
+    --letterSpacing-3: 0.2em;
+    --letterSpacing-4: 0.3em;
+    --letterSpacing-5: 3px;
+
+    /**
+    * SPACING
+    */
+
+    --section-space: 70px;
+
+    /**
+    * SHADOW
+    */
+
+    --shadow-1: 0px 0px 25px 0px hsla(0, 0%, 0%, 0.25);
+
+    /**
+    * BORDER RADIUS
+    */
+
+    --radius-24: 24px;
+    --radius-circle: 50%;
+
+    /**
+    * TRANSITION
+    */
+
+    --transition-1: 250ms ease;
+    --transition-2: 500ms ease;
+    --transition-3: 1000ms ease;
+
+}
+.testimonials {
+    background-color: var(--eerie-black-1);
+    padding: var(--section-space) 0;
+    color: var(--white);
+    font-family: var(--fontFamily-dm_sans);
+}
+
+.testimonials__title {
+    font-size: var(--fontSize-title-2);
+    color: var(--gold-crayola);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: var(--weight-bold);
+}
+
+.section_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+}
+
+.section_card {
+    background-color: var(--smoky-black-1);
+    padding: 2rem;
+    border-radius: var(--radius-24);
+    box-shadow: var(--shadow-1);
+    text-align: center;
+    transition: var(--transition-1);
+}
+
+.section_card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 30px var(--black-alpha-80);
+}
+
+.section_card h4 {
+    font-size: var(--fontSize-title-4);
+    color: var(--gold-crayola);
+    margin-bottom: 1rem;
+}
+
+.section_card p {
+    font-size: var(--fontSize-body-4);
+    color: var(--quick-silver);
+    line-height: var(--lineHeight-4);
+    margin-bottom: 1.5rem;
+}
+
+.section_card h5 {
+    font-size: var(--fontSize-label-1);
+    font-weight: var(--weight-bold);
+    color: var(--white);
+}
+
+.section_card h6 {
+    font-size: var(--fontSize-label-2);
+    font-weight: var(--weight-regular);
+    color: var(--quick-silver);
+}
+
+.ri-double-quotes-l {
+    font-size: 2.5rem;
+    color: var(--gold-crayola);
+    margin-bottom: 1rem;
+}
+/* Default (for larger screens: 1400px and up) */
+@media (min-width: 1400px) {
+    .section_grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .testimonials__title {
+        font-size: var(--fontSize-title-2);
+    }
+
+    .section_card {
+        padding: 2rem;
+    }
+
+    .section_card h4 {
+        font-size: var(--fontSize-title-4);
+    }
+}
+
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .section_grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .testimonials__title {
+        font-size: calc(var(--fontSize-title-2) - 0.2rem);
+    }
+
+    .section_card {
+        padding: 1.8rem;
+    }
+
+    .section_card h4 {
+        font-size: calc(var(--fontSize-title-4) - 0.2rem);
+    }
+}
+
+/* Medium screens (992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .section_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonials__title {
+        font-size: calc(var(--fontSize-title-2) - 0.3rem);
+    }
+
+    .section_card {
+        padding: 1.6rem;
+    }
+
+    .section_card h4 {
+        font-size: calc(var(--fontSize-title-4) - 0.3rem);
+    }
+}
+
+/* Tablets (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section_grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .testimonials__title {
+        font-size: calc(var(--fontSize-title-2) - 0.4rem);
+    }
+
+    .section_card {
+        padding: 1.4rem;
+    }
+
+    .section_card h4 {
+        font-size: calc(var(--fontSize-title-4) - 0.4rem);
+    }
+}
+
+/* Phones (576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .section_grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .testimonials__title {
+        font-size: calc(var(--fontSize-title-2) - 0.5rem);
+    }
+
+    .section_card {
+        padding: 1.2rem;
+    }
+
+    .section_card h4 {
+        font-size: calc(var(--fontSize-title-4) - 0.5rem);
+    }
+}
+
+/* Small phones (below 575px) */
+@media (max-width: 575px) {
+    .section_grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .testimonials__title {
+        font-size: calc(var(--fontSize-title-2) - 0.6rem);
+    }
+
+    .section_card {
+        padding: 1rem;
+    }
+
+    .section_card h4 {
+        font-size: calc(var(--fontSize-title-4) - 0.6rem);
+    }
+
+    .ri-double-quotes-l {
+        font-size: 2rem;
+    }
+}
