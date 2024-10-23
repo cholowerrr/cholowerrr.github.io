@@ -1,0 +1,1069 @@
+<!-- 
+  index.html 
+  Dayrit, Gabriel Andrei G.
+  Delos Santos, Hailey D.
+  Pascual, Macline Jane T.
+  Tayag, Michael D.  
+  CYB-201/6INTROWEB
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>MiSushi</title>
+  <meta name="title" content="MiSushi">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="misushi_images/MiSushi-logo.png" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="misushi_images/slider-1.png">
+  <link rel="preload" as="image" href="misushi_images/slider-2.png">
+  <link rel="preload" as="image" href="misushi_images/slider-3.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">MiSushi</p>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #TOP BAR
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          123 Tokyo Lane, Sushi District PH
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Daily : 9.00 am to 11.00 pm</span>
+      </div>
+
+      <a href="tel:+63 123 4567 890" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+63 123 4567 890</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:booking@restaurant.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">misushiresto@restaurant.com</span>
+      </a>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="misushi_images/MiSushi-logo.png" width="150" height="50" alt="MiSushi - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="misushi_images/MiSushi-logo.png" width="150" height="50" alt="MiSushi - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./htmls/misushi_menus.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Menus</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./htmls/misushi_gallery.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Gallery</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+
+          <address class="body-4">
+            123 Tokyo Lane, Sushi District PH
+          </address>
+
+          <p class="body-4 navbar-text">Open: 9.00 am - 11.00pm</p>
+
+          <a href="mailto:misushiresto@restaurant.com" class="body-4 sidebar-link">misushiresto@restaurant.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Booking Request</p>
+
+          <a href="tel:+63 123 4567 890" class="body-1 contact-number hover-underline">
+            +63 123 4567 890
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="./htmls/misushi_menus.html" class="btn btn-secondary">
+        <span class="text text-1">Order Now</span>
+
+        <span class="text text-2" aria-hidden="true">Order Now</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+      <audio id="background-music" src="misushi_sound/misushi_bgmusic.mp3" autoplay loop></audio>
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="misushi_images/slider-1.png" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Experience the Art of Sushi</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              For the love of <br>
+              Authentic Sushi
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+            <a href="./htmls/misushi_menus.html" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="misushi_images/slider-2.png" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Where Every Rolls <br>
+              Tells A Story
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+            <a href="./htmls/misushi_menus.html" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="misushi_images/slider-3.png" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Flavors Inspired By  <br>
+              Traditions And Craftmanship
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+            <a href="./htmls/misushi_menus.html" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="#" class="hero-btn has-after">
+          <img src="misushi_images/hero-icon.png" width="48" height="48" alt="booking icon">
+
+          <span class="label-2 text-center span">Book A Table</span>
+        </a>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service bg-black-10 text-center" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Flavors For Royalty</p>
+
+          <h2 class="headline-1 section-title">We Offer Top Notch</h2>
+
+          <p class="section-text">
+            Sushi, ramen, and Japanese delicacies. From savory appetizers to refreshing drinks, experience a culinary journey designed to satisfy even the most refined palates. At MiSushi, every dish is crafted with care, offering the perfect balance of tradition and innovation.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="misushi_images/service-1.png" width="285" height="336" loading="lazy" alt="Breakfast"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Sushi</a>
+                  </h3>
+
+                  <a href="./htmls/misushi_menus.html#popular" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="misushi_images/service-2.png" width="285" height="336" loading="lazy" alt="Appetizers"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Ramen</a>
+                  </h3>
+
+                  <a href="./htmls/misushi_menus.html#ramen" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="misushi_images/service-3.png" width="285" height="336" loading="lazy" alt="Drinks"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Drinks</a>
+                  </h3>
+
+                  <a href="./htmls/misushi_menus.html#drinks" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+            
+          </ul>
+
+          <img src="misushi_images/shape-1.png" width="1800" height="412" loading="lazy" alt="shape"
+            class="shape shape-1 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">Our Story</p>
+
+            <h2 class="headline-1 section-title">Where Every Roll Tells a Story</h2>
+
+            <p class="section-text">
+              At MiSushi, every roll tells a story. Our journey began with a passion for crafting authentic sushi that transcends traditional dining. Nestled in the heart of Sushi District, our restaurant is more than just a place to eat; it's a celebration of culture, craftsmanship, and creativity.
+            </p>
+
+            <div class="contact-label">Order Through Call</div>
+
+            <a href="tel:+63 123 4567 890" class="body-1 contact-number hover-underline">+63 123 4567 890</a>
+
+            <a href="htmls/misushi_about.html" class="btn btn-primary">
+              <span class="text text-1">Read More</span>
+
+              <span class="text text-2" aria-hidden="true">Read More</span>
+            </a>
+
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="misushi_images/about-banner.png" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="misushi_images/about-abs-image.png" width="450" height="285" loading="lazy" alt=""
+                class="w-100">
+            </div>
+
+            <div class="abs-img abs-img-2 has-before">
+              <img src="misushi_images/badge.png" width="110" height="134" loading="lazy" alt="">
+            </div>
+
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SPECIAL DISH
+      -->
+
+      <section class="special-dish text-center" aria-labelledby="dish-label">
+
+        <div class="special-dish-banner">
+          <img src="misushi_images/misushi_special.png" width="940" height="900" loading="lazy" alt="special dish"
+            class="img-cover">
+        </div>
+
+        <div class="special-dish-content bg-black-10">
+          <div class="container">
+
+            <img src="misushi_images/badge-1.png" width="28" height="41" loading="lazy" alt="badge" class="abs-img">
+
+            <p class="section-subtitle label-2">Special Dish</p>
+
+            <h2 class="headline-1 section-title">Dragon Roll</h2>
+
+            <p class="section-text">
+              Dive into the Dragon Roll, a sushi creation that’s as visually stunning as it is delicious. This roll features succulent tempura shrimp, creamy avocado, and crunchy cucumber, all wrapped in perfectly seasoned sushi rice and nori. It's topped with thin slices of fresh eel and avocado, then drizzled with a sweet and savory eel sauce. Garnished with a sprinkle of tobiko (fish roe) and a touch of scallions, the Dragon Roll offers a delicious blend of textures and flavors in every bite.
+            </p>
+
+            <div class="wrapper">
+              <del class="del body-3">₱900</del>
+
+              <span class="span body-1">₱700</span>
+            </div>
+
+            <a href="./htmls/misushi_menus.html" class="btn btn-primary">
+              <span class="text text-1">View All Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View All Menu</span>
+            </a>
+
+          </div>
+        </div>
+
+        <img src="misushi_images/shape-9.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #MENU
+      -->
+
+      <section class="section menu" aria-label="menu-label" id="menu">
+        <div class="container">
+
+          <p class="section-subtitle text-center label-2">Special Selection</p>
+
+          <h2 class="headline-1 section-title text-center">Delicious Menu</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Futomaki Sushi</a>
+                    </h3>
+
+                    <span class="span title-2">₱ 220</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    A thick, flavorful sushi roll filled with a variety of fresh ingredients.                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Shoyu Ramen</a>
+                    </h3>
+
+                    <span class="span title-2">₱ 380</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Chicken broth with spices and soy sauce, offering savory, comforting, and balanced flavors.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Salmon Sushi Wrap</a>
+                    </h3>
+
+                    <span class="badge label-1">Seasonal</span>
+
+                    <span class="span title-2">₱ 340</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Succulent salmon wrapped in seaweed, offering a rich and savory bite.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Tonkatsu Ramen</a>
+                    </h3>
+
+                    <span class="span title-2">₱ 450</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    This ramen is white in color with a thick, creamy texture and a rich, hearty flavor.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Kani Japanese Sushi</a>
+                    </h3>
+
+                    <span class="badge label-1">Seasonal</span>
+
+                    <span class="span title-2">₱ 220</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Sweet and tender crab meat sushi wrapped in nori for a delightful taste.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Ramen Kobe</a>
+                    </h3>
+
+                    <span class="badge label-1">Seasonal</span>
+
+                    <span class="span title-2">₱ 480</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Slices of tender beef stuffed with pickled radish, chives, and flavorful seasonings for a delightful experience.                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <p class="menu-text text-center">
+            Daily from <span class="span">5:00 pm</span> to <span class="span">10:00 pm</span>
+          </p>
+
+          <a href="misushi_menus.html" class="btn btn-primary">
+            <span class="text text-1">View All Menu</span>
+
+            <span class="text text-2" aria-hidden="true">View All Menu</span>
+          </a>
+
+          <img src="misushi_images/shape-6.png" width="700" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+          <img src="misushi_images/shape-5.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-3 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TESTIMONIALS
+      -->
+
+      <section class="section testi text-center has-bg-image"
+        style="background-image: url('misushi_images/misushi_reviews.png')" aria-label="testimonials">
+        <div class="container">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            MiSushi is a true gem in the dining scene. The sushi is always fresh, and the service is friendly and attentive. It’s a place that never disappoints and always leaves a great impression.
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="misushi_images/testimonial-avatar.jpg" width="150" height="560" loading="lazy" alt="Sam Jhonson"
+              class="img">
+
+            <p class="label-2 profile-name">Michael Tayag</p>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #RESERVATION
+      -->
+
+      <section class="reservation">
+        <div class="container">
+
+          <div class="form reservation-form bg-black-10">
+
+            <form action="" class="form-left">
+
+              <h2 class="headline-1 text-center">Online Reservation</h2>
+
+              <p class="form-text text-center">
+                Booking request <a href="tel:+63 123 4567 890" class="link">+63 123 4567 890</a>
+                or fill out the order form
+              </p>
+
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field">
+
+                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field">
+              </div>
+
+              <div class="input-wrapper">
+
+                <div class="icon-wrapper">
+                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="person" class="input-field">
+                    <option value="1-person">1 Person</option>
+                    <option value="2-person">2 Person</option>
+                    <option value="3-person">3 Person</option>
+                    <option value="4-person">4 Person</option>
+                    <option value="5-person">5 Person</option>
+                    <option value="6-person">6 Person</option>
+                    <option value="7-person">7 Person</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                  <input type="date" name="reservation-date" class="input-field">
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="person" class="input-field">
+                    <option value="09:00am">09 : 00 am</option>
+                    <option value="010:00am">10 : 00 am</option>
+                    <option value="011:00am">11 : 00 am</option>
+                    <option value="012:00am">12 : 00 am</option>
+                    <option value="01:00pm">01 : 00 pm</option>
+                    <option value="02:00pm">02 : 00 pm</option>
+                    <option value="03:00pm">03 : 00 pm</option>
+                    <option value="04:00pm">04 : 00 pm</option>
+                    <option value="05:00pm">05 : 00 pm</option>
+                    <option value="06:00pm">06 : 00 pm</option>
+                    <option value="07:00pm">07 : 00 pm</option>
+                    <option value="08:00pm">08 : 00 pm</option>
+                    <option value="09:00pm">09 : 00 pm</option>
+                    <option value="10:00pm">10 : 00 pm</option>
+                    <option value="10:00pm">11 : 00 pm</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+              </div>
+
+              <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
+
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1">Book A Table</span>
+
+                <span class="text text-2" aria-hidden="true">Book A Table</span>
+              </button>
+
+            </form>
+
+            <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
+
+              <h2 class="headline-1 text-center">Contact Us</h2>
+
+              <p class="contact-label">Booking Request</p>
+
+              <a href="tel:+63 123 4567 890" class="body-1 contact-number hover-underline">+63 123 4567 890</a>
+
+              <div class="separator"></div>
+
+              <p class="contact-label">Location</p>
+
+              <address class="body-4">
+                123 Tokyo Lane, Sushi District PH
+              </address>
+
+              <p class="contact-label">Lunch Time</p>
+
+              <p class="body-4">
+                Monday to Sunday <br>
+                11.00 am - 2.30pm
+              </p>
+
+              <p class="contact-label">Dinner Time</p>
+
+              <p class="body-4">
+                Monday to Sunday <br>
+                05.00 pm - 10.00pm
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features text-center" aria-label="features">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Why Choose Us</p>
+
+          <h2 class="headline-1 section-title">Our Strength</h2>
+
+          <ul class="grid-list">
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="misushi_images/features-icon-1.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Hygienic Food</h3>
+
+                <p class="label-1 card-text">We prioritize cleanliness and use only the freshest, high-quality ingredients sourced daily to ensure every dish is bursting with authentic flavors.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="misushi_images/features-icon-2.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Fresh Environment</h3>
+
+                <p class="label-1 card-text">Dine in a clean, comfortable setting designed to enhance your sushi experience, with a refreshing ambiance that matches the quality of the food.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="misushi_images/features-icon-3.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Skilled Chefs</h3>
+
+                <p class="label-1 card-text">Our chefs are trained masters, blending traditional sushi-making techniques with modern innovation to create dishes that are both artful and delicious.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="misushi_images/features-icon-4.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Event & Party</h3>
+
+                <p class="label-1 card-text">Celebrate with us! We offer tailored event services, making special occasions memorable with our expertly crafted sushi and delightful dining experience.</p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer section has-bg-image text-center"
+    style="background-image: url('misushi_images/MiSushi-01.png')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="#" class="logo">
+            <img src="misushi_images/MiSushi-logo.png" width="160" height="50" loading="lazy" alt="grilli home">
+          </a>
+
+          <address class="body-4">
+            123 Tokyo Lane, Sushi District PH
+          </address>
+
+          <a href="mailto:
+          misushiresto@restaurant.com" class="body-4 contact-link">
+          misushiresto@restaurant.com</a>
+
+          <a href="tel:+63 123 4567 890" class="body-4 contact-link">Booking Request : +63 123 4567 890</a>
+
+          <p class="body-4">
+            Open : 09:00 am - 11:00 pm
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <p class="title-1">Get News & Offers</p>
+
+          <p class="label-1">
+            Subscribe us & Get <span class="span">10% Off.</span>
+          </p>
+
+          <form action="" class="input-wrapper">
+            <div class="icon-wrapper">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Subscribe</span>
+
+              <span class="text text-2" aria-hidden="true">Subscribe</span>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#home" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+
+          <li>
+            <a href="htmls/misushi_menus.html" class="label-2 footer-link hover-underline">Menus</a>
+          </li>
+
+          <li>
+            <a href="htmls/misushi_about.html" class="label-2 footer-link hover-underline">About Us</a>
+          </li>
+
+          <li>
+            <a href="htmls/misushi_gallery.html" class="label-2 footer-link hover-underline">Gallery</a>
+          </li>
+
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
