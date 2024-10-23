@@ -1,0 +1,396 @@
+    <!-- 
+    misushi_menus.html 
+    Dayrit, Gabriel Andrei G.
+    Delos Santos, Hailey D.
+    Pascual, Macline Jane T.
+    Tayag, Michael D.  
+    CYB-201/6INTROWEB
+    -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 
+    - primary meta tags
+-->
+<title>MiSushi</title>
+<meta name="title" content="MiSushi">
+
+<!-- 
+    - favicon
+-->
+<link rel="shortcut icon" href="../misushi_images/MiSushi-logo.png" type="image/svg+xml">
+
+<!-- 
+    - google font link
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+<!-- 
+    - custom css link
+-->
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/misushi_popular_mdt.css">
+
+<!-- 
+    - preload images
+-->
+<link rel="preload" as="image" href="../misushi_images/slider-1.png">
+<link rel="preload" as="image" href="../misushi_images/slider-2.png">
+<link rel="preload" as="image" href="../misushi_images/slider-3.png">
+
+</head>
+
+<body id="top">
+
+<!-- 
+    - #PRELOADER
+-->
+
+<div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">MiSushi</p>
+</div>
+
+
+
+
+
+<!-- 
+    - #TOP BAR
+-->
+
+<div class="topbar">
+    <div class="container">
+
+    <address class="topbar-item">
+        <div class="icon">
+        <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+        123 Tokyo Lane, Sushi District PH
+        </span>
+    </address>
+
+    <div class="separator"></div>
+
+    <div class="topbar-item item-2">
+        <div class="icon">
+        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Daily : 9.00 am to 11.00 pm</span>
+    </div>
+
+    <a href="tel:+63 123 4567 890" class="topbar-item link">
+        <div class="icon">
+        <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+63 123 4567 890</span>
+    </a>
+
+    <div class="separator"></div>
+
+    <a href="mailto:booking@restaurant.com" class="topbar-item link">
+        <div class="icon">
+        <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">misushiresto@restaurant.com</span>
+    </a>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- 
+    - #HEADER
+-->
+
+<header class="header" data-header>
+    <div class="container">
+    <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+        <li class="navbar-item">
+            <a href="../index.html" class="navbar-link hover-underline ">
+            <div class="separator"></div>
+
+            <span class="span">Home</span>
+            </a>
+        </li>
+
+        <li class="navbar-item">
+            <a href="misushi_menus.html" class="navbar-link hover-underline active">
+            <div class="separator"></div>
+
+            <span class="span">Menus</span>
+            </a>
+        </li>
+
+        <li class="navbar-item">
+            <a href="misushi_about.html" class="navbar-link hover-underline">
+            <div class="separator"></div>
+
+            <span class="span">About Us</span>
+            </a>
+        </li>
+
+        <li class="navbar-item">
+            <a href="misushi_gallery.html" class="navbar-link hover-underline">
+            <div class="separator"></div>
+
+            <span class="span">Gallery</span>
+            </a>
+        </li>
+
+        </ul>
+
+        <div class="text-center">
+        <p class="headline-1 navbar-title">Visit Us</p>
+
+        <address class="body-4">
+            123 Tokyo Lane, Sushi District PH
+        </address>
+
+        <p class="body-4 navbar-text">Open: 9.00 am - 11.00pm</p>
+
+        <a href="mailto:misushiresto@restaurant.com" class="body-4 sidebar-link">misushiresto@restaurant.com</a>
+
+        <div class="separator"></div>
+
+        <p class="contact-label">Booking Request</p>
+
+        <a href="tel:+63 123 4567 890" class="body-1 contact-number hover-underline">
+            +63 123 4567 890
+        </a>
+        </div>
+
+    </nav>
+
+    <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+    </button>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+</header>
+<audio id="background-music" src="../misushi_sound/misushi_bgmusic.mp3" autoplay loop></audio>
+<div class="container">
+    <section class="popular section" id="popular">
+        <span class="section__subtitle">Customer Favorites</span>
+        <h2 class="section__title">Popular Rolls and More</h2>
+        <h3 class="section__subsubtitle">Sushi Menu</h3>
+        <div class="popular__container container grid">
+            <article class="popular__card">
+                <img src="../misushi_images/futomaki.png" alt="popular image" class="popular__img">
+                <h3 class="popular_name">Futomaki Sushi</h3>
+                <span class="popular__description">Sushi roll filled with a variety of fresh ingredients.</span>
+                <span class="popular__price">₱ 220</span>
+                <button class="popular__button" data-name="Futomaki Sushi" data-price="220">
+                    <i class="ri-shopping-bag-line"></i> 
+                </button>
+            </article>
+            <article class="popular__card">
+                <img src="../misushi_images/ikura.png" alt="popular image" class="popular__img">
+                <h3 class="popular_name">Ikura Sushi Roll</h3>
+                <span class="popular__description">Delicate salmon roe atop seasoned rice</span>
+                <span class="popular__price">₱ 170</span>
+                <button class="popular__button" data-name="Ikura Sushi Roll" data-price="170">
+                    <i class="ri-shopping-bag-line"></i> 
+                </button>
+            </article>
+            <article class="popular__card">
+                <img src="../misushi_images/salmon.png" alt="popular image" class="popular__img">
+                <h3 class="popular__name">Salmon Sushi Wrap</h3>
+                <span class="popular__description">Succulent salmon wrapped in seaweed</span>
+                <span class="popular__price">₱ 340</span>
+                <button class="popular__button" data-name="Salmon Sushi Wrap" data-price="340">
+                    <i class="ri-shopping-bag-line"></i> 
+                </button>
+            </article>
+            <article class="popular__card">
+                <img src="../misushi_images/masago.png" alt="popular image" class="popular__img">
+                <h3 class="popular_name">Ma Sago Sushi</h3>
+                <span class="popular__description">Topped with smelt roe for a crunchy texture.</span>
+                <span class="popular__price">₱ 220</span>
+                <button class="popular__button" data-name="Ma Sago Sushi" data-price="220">
+                    <i class="ri-shopping-bag-line"></i> 
+                </button>
+            </article>
+            <article class="popular__card">
+                <img src="../misushi_images/shrimp.png" alt="popular image" class="popular__img">
+                <h3 class="popular_name">Shrimp Sushi</h3>
+                <span class="popular__description">Shrimp placed over seasoned rice</span>
+                <span class="popular__price">₱ 170</span>
+                <button class="popular__button" data-name="Shrimp Sushi" data-price="170">
+                    <i class="ri-shopping-bag-line"></i> 
+                </button>
+            </article>
+            <article class="popular__card">
+                <img src="../misushi_images/kani.png" alt="popular image" class="popular__img">
+                <h3 class="popular__name">Kani Japanese Sushi</h3>
+                <span class="popular__description"> Crab meat sushi wrapped in nori</span>
+                <span class="popular__price">₱ 340</span>
+                <button class="popular__button" data-name="Kani Japanese Sushi" data-price="340">
+                    <i class="ri-shopping-bag-line"></i> 
+                </button>
+            </article>
+        </div>
+        <section class="popular section" id="ramen">
+        <h3 class="section__subsubtitle">Ramen Menu</h3>
+        <div class="popular__container container grid">
+            <article class="popular__card">
+                <img src="../misushi_images/shio.png" alt="popular image" class="populardrinks__img">
+                <h3 class="popular__name">Shio Ramen</h3>
+                <span class="popular__description">The taste of a light sea-based broth</span>
+                <span class="popular__price">₱ 350</span>
+                <button class="popular__button" data-name="Shio Ramen" data-price="350">
+                    <i class="ri-shopping-bag-line"></i> 
+                </button>
+            </article>
+            <article class="popular__card">
+                <img src="../misushi_images/shoyu.png" alt="popular image" class="populardrinks__img">
+                <h3 class="popular__name">Shoyu Ramen</h3>
+                <span class="popular__description">Chicken broth with spices and soy sauce</span>
+                <span class="popular__price">₱ 380</span>
+                <button class="popular__button" data-name="Shoyu Ramen" data-price="380">
+                    <i class="ri-shopping-bag-line"></i> 
+                </button>
+            </article>
+            <article class="popular__card">
+                <img src="../misushi_images/miso.png" alt="popular image" class="populardrinks__img">
+                <h3 class="popular__name">Miso Ramen</h3>
+                <span class="popular__description">Miso lends a savory flavor to the ramen broth</span>
+                <span class="popular__price">₱ 400</span>
+                <button class="popular__button" data-name="Miso Ramen" data-price="400">
+                    <i class="ri-shopping-bag-line"></i> 
+                </button>
+            </article>
+            <article class="popular__card">
+                <img src="../misushi_images/tonkatsu.png" alt="popular image" class="populardrinks__img">
+                <h3 class="popular__name">Tonkatsu Ramen</h3>
+                <span class="popular__description">This ramen is white in color with a thick texture</span>
+                <span class="popular__price">₱ 450</span>
+                <button class="popular__button" data-name="Tonkatsu Ramen" data-price="450">
+                    <i class="ri-shopping-bag-line"></i> 
+                </button>
+            </article>
+            <article class="popular__card">
+                <img src="../misushi_images/kobe.png" alt="popular image" class="populardrinks__img">
+                <h3 class="popular__name">Ramen Kobe</h3>
+                <span class="popular__description">Slices of beef stuffed with pickled radish and chives</span>
+                <span class="popular__price">₱ 480</span>
+                <button class="popular__button" data-name="Ramen Kobe " data-price="480">
+                    <i class="ri-shopping-bag-line"></i> 
+                </button>
+            </article>
+            <article class="popular__card">
+                <img src="../misushi_images/hakodate.png" alt="popular image" class="populardrinks__img">
+                <h3 class="popular__name">Hakodate Ramen</h3>
+                <span class="popular__description">Using cheese powder as a flavoring for the ramen</span>
+                <span class="popular__price">₱ 420</span>
+                <button class="popular__button" data-name="Hakodate Ramen" data-price="420">
+                    <i class="ri-shopping-bag-line"></i> 
+                </button>
+            </article>
+        </div>
+        </section>
+        <section class="popular section" id="drinks">
+        <h3 class="section__subsubtitle">Drinks Menu</h3>
+        <div class="popular__container container grid">
+            <article class="popular__card">
+                <img src="../misushi_images/matcha.png" alt="popular image" class="popularsides__img">
+                <h3 class="popular__name">Matcha Latte</h3>
+                <span class="popular__description">A rich and creamy green tea latte with earthy flavors.</span>
+                <span class="popular__price">₱ 220</span>
+                <button class="popular__button" data-name="Matcha Latte" data-price="220">
+                    <i class="ri-shopping-bag-line"></i> 
+                </button>
+            </article>
+            <article class="popular__card">
+                <img src="../misushi_images/royal.png" alt="popular image" class="popularsides__img">
+                <h3 class="popular__name">Royal Milk Tea</h3>
+                <span class="popular__description"> Delightful blend of black tea and milk.</span>
+                <span class="popular__price">₱ 200</span>
+                <button class="popular__button" data-name="Royal Milk Tea" data-price="200">
+                    <i class="ri-shopping-bag-line"></i> 
+                </button>
+            </article>
+            <article class="popular__card">
+                <img src="../misushi_images/coffeee.png" alt="popular image" class="popularsides__img">
+                <h3 class="popular__name">Coffee Latte</h3>
+                <span class="popular__description"> Espresso paired with steamed milk.</span>
+                <span class="popular__price">₱ 180</span>
+                <button class="popular__button" data-name="Coffee Latte" data-price="180">
+                    <i class="ri-shopping-bag-line"></i> 
+                </button>
+            </article>
+            <article class="popular__card">
+                <img src="../misushi_images/lemon.png" alt="popular image" class="popularsides__img">
+                <h3 class="popular__name">Lemon Tea</h3>
+                <span class="popular__description">Iced tea infused with a zesty lemon kick.</span>
+                <span class="popular__price">₱ 160</span>
+                <button class="popular__button" data-name="Lemon Tea" data-price="160">
+                    <i class="ri-shopping-bag-line"></i> 
+                </button>
+            </article>
+            <article class="popular__card">
+                <img src="../misushi_images/oraange.png" alt="popular image" class="popularsides__img">
+                <h3 class="popular__name">Orange Juice</h3>
+                <span class="popular__description">Orange juice bursting with natural sweetness.</span>
+                <span class="popular__price">₱ 200</span>
+                <button class="popular__button" data-name="Orange Juice" data-price="200">
+                    <i class="ri-shopping-bag-line"></i>
+                </button>
+            </article>
+            <article class="popular__card">
+                <img src="../misushi_images/squash.png" alt="popular image" class="popularsides__img">
+                <h3 class="popular__name">Lemon Squash</h3>
+                <span class="popular__description">Lemon beverage for a citrusy refreshment.</span>
+                <span class="popular__price">₱ 180</span>
+                <button class="popular__button" data-name="Lemon Squash" data-price="180">
+                    <i class="ri-shopping-bag-line"></i> 
+                </button>
+            </article>
+        </section>
+        </div>                   
+    </section>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <button class="close-cart" id="close-cart">Close Cart</button>
+        <ul id="cart-items"></ul>
+        <p>Total: <span id="total-price">₱ 0.00</span></p>
+        <button class="checkout-button" id="checkout-button">Checkout</button>
+    </div>      
+
+    <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+        <i class="ri-arrow-up-s-line" aria-hidden="true"></i>
+    </a>
+    
+<!-- JS Script -->
+<script src="../assets/js/script.js"></script>
+<script src="../assets/js/cart.js"></script>
+</body>
+</html>
+

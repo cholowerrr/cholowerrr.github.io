@@ -1,0 +1,389 @@
+    <!-- 
+    misushi_about.html 
+    Dayrit, Gabriel Andrei G.
+    Delos Santos, Hailey D.
+    Pascual, Macline Jane T.
+    Tayag, Michael D.  
+    CYB-201/6INTROWEB
+    -->
+    
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+        - primary meta tags
+    -->
+    <title>MiSushi</title>
+    <meta name="title" content="MiSushi">
+
+    <!-- 
+        - favicon
+    -->
+    <link rel="shortcut icon" href="../misushi_images/MiSushi-logo.png" type="image/svg+xml">
+
+    <!-- 
+        - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+    <!-- 
+        - custom css link
+    -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/misushi_about.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <!-- 
+        - preload images
+    -->
+    <link rel="preload" as="image" href="../misushi_images/slider-1.png">
+    <link rel="preload" as="image" href="../misushi_images/slider-2.png">
+    <link rel="preload" as="image" href="../misushi_images/slider-3.png">
+
+    </head>
+
+    <body id="top">
+
+    <!-- 
+        - #PRELOADER
+    -->
+
+    <div class="preload" data-preaload>
+        <div class="circle"></div>
+        <p class="text">MiSushi</p>
+    </div>
+
+
+
+
+
+    <!-- 
+        - #TOP BAR
+    -->
+
+    <div class="topbar">
+        <div class="container">
+
+        <address class="topbar-item">
+            <div class="icon">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <span class="span">
+            123 Tokyo Lane, Sushi District PH
+            </span>
+        </address>
+
+        <div class="separator"></div>
+
+        <div class="topbar-item item-2">
+            <div class="icon">
+            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <span class="span">Daily : 9.00 am to 11.00 pm</span>
+        </div>
+
+        <a href="tel:+63 123 4567 890" class="topbar-item link">
+            <div class="icon">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <span class="span">+63 123 4567 890</span>
+        </a>
+
+        <div class="separator"></div>
+
+        <a href="mailto:booking@restaurant.com" class="topbar-item link">
+            <div class="icon">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <span class="span">misushiresto@restaurant.com</span>
+        </a>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- 
+        - #HEADER
+    -->
+
+    <header class="header" data-header>
+        <div class="container">
+        <nav class="navbar" data-navbar>
+
+            <button class="close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+            <ul class="navbar-list">
+
+            <li class="navbar-item">
+                <a href="../index.html" class="navbar-link hover-underline ">
+                <div class="separator"></div>
+
+                <span class="span">Home</span>
+                </a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="misushi_menus.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Menus</span>
+                </a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="misushi_about.html" class="navbar-link hover-underline active">
+                <div class="separator"></div>
+
+                <span class="span">About Us</span>
+                </a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="misushi_gallery.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Gallery</span>
+                </a>
+            </li>
+
+            </ul>
+
+            <div class="text-center">
+            <p class="headline-1 navbar-title">Visit Us</p>
+
+            <address class="body-4">
+                123 Tokyo Lane, Sushi District PH
+            </address>
+
+            <p class="body-4 navbar-text">Open: 9.00 am - 11.00pm</p>
+
+            <a href="mailto:misushiresto@restaurant.com" class="body-4 sidebar-link">misushiresto@restaurant.com</a>
+
+            <div class="separator"></div>
+
+            <p class="contact-label">Booking Request</p>
+
+            <a href="tel:+63 123 4567 890" class="body-1 contact-number hover-underline">
+                +63 123 4567 890
+            </a>
+            </div>
+
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+
+        </div>
+    </header>
+
+
+
+
+
+
+<!-- ABOUT US SECTION -->
+<audio id="background-music" src="../misushi_sound/misushi_bgmusic.mp3" autoplay loop></audio>
+<section class="section about text-center" id="about">
+    <div class="container">
+    <div class="about-content">
+        <p class="label-2 section-subtitle">Our Story</p>
+        <h2 class="headline-1 section-title">Where Every Roll Tells a Story</h2>
+        <p>At MiSushi, every roll tells a story. Our journey began with a passion for crafting authentic sushi that transcends traditional dining. Nestled in the heart of Sushi District, our restaurant is more than just a place to eat; it's a celebration of culture, craftsmanship, and creativity.
+            Our story is rooted in a deep appreciation for Japanese culinary traditions and a desire to elevate them with a modern twist. From our humble beginnings, we have grown into a destination where sushi is not merely a dish but a crafted experience. Our chefs, each with years of experience, blend time-honored techniques with innovative flavors to create a menu that's both familiar and exciting.
+        </p><br>
+        <p>
+            The essence of MiSushi lies in our commitment to excellence, reflected in every detail of our offerings. We source the freshest ingredients, ensuring that every bite is a journey through the finest flavors. Our sushi-making process is a meticulous art, where precision meets passion, and every roll is a masterpiece.
+            But MiSushi is not just about the food; it's about the experience. We strive to create a warm, inviting atmosphere where guests can immerse themselves in the essence of Japanese dining. Our restaurant is a place where memories are made, whether it's a casual meal with friends or a special celebration.
+            Join us at MiSushi, where each roll is a story, and every visit is an exploration of the art and tradition of sushi.
+        </p>
+    </div>
+
+    <figure class="about-banner">
+
+        <img src="../misushi_images/about-banner.png" width="570" height="570" loading="lazy" alt="about banner"
+        class="w-100" data-parallax-item data-parallax-speed="1">
+
+        <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+        <img src="../misushi_images/about-abs-image.png" width="450" height="285" loading="lazy" alt=""
+            class="w-500">
+        </div>
+    </figure>
+    </div>
+</section>
+<section class="testimonials section" id="testimonials">
+    <div class="section_container">
+        <h3 class="testimonials__title">What Our Customers Say</h3>
+        <div class="section_grid">
+            <div class="section_card">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <h4>A Culinary Masterpiece!</h4>
+                <p class="p-hover">
+                    Misushi offers an incredible dining experience. The sushi is fresh and expertly crafted, and the ambiance is perfect for a night out. Each dish is a masterpiece, making every visit memorable.
+                </p>
+                <h5>Hailey Delos Santos</h5>
+                <h6>Customer</h6>
+            </div>
+            <div class="section_card">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <h4>Unmatched Quality and Service!</h4>
+                <p>
+                    The quality of the food at Misushi Resto is unmatched. Every bite is bursting with flavor, and the service is always top-notch. It’s the best place for sushi lovers in town.
+                </p>
+                <h5>Aira Rosal</h5>
+                <h6>Customer</h6>
+            </div>
+            <div class="section_card">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <h4>Always a Delight!</h4>
+                <p>
+                    Misushi consistently delivers a delightful experience. The menu is diverse, and every dish is prepared with care. It's a go-to spot for delicious sushi and a great dining atmosphere.
+                </p>
+                <h5>Katherine Sanchez</h5>
+                <h6>Customer</h6>
+            </div>
+            <div class="section_card">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <h4>Exceptional and Unique!</h4>
+                <p>
+                    Misushi offers unique and exceptional sushi dishes. The creativity and freshness of their ingredients make each meal a special occasion. Highly recommend for anyone craving great sushi.
+                </p>
+                <h5>Macline Pascual</h5>
+                <h6>Customer</h6>
+            </div>
+            <div class="section_card">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <h4>My Favorite Sushi Spot!</h4>
+                <p>
+                    Misushi is my favorite sushi spot. The quality is consistently excellent, and the variety of dishes is impressive. Great place for both casual meals and special occasions.
+                </p>
+                <h5>Gabriel Andrei Dayrit</h5>
+                <h6>Customer</h6>
+            </div>
+            <div class="section_card">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <h4>A True Gem!</h4>
+                <p>
+                    Misushi is a true gem in the dining scene. The sushi is always fresh, and the service is friendly and attentive. It’s a place that never disappoints and always leaves a great impression.
+                </p>
+                <h5>Arvin Yulianto</h5>
+                <h6>Customer</h6>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer section has-bg-image text-center"
+    style="background-image: url('../misushi_images/MiSushi-01.png')">
+    <div class="container">
+
+    <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+        <a href="#" class="logo">
+            <img src="../misushi_images/MiSushi-logo.png" width="160" height="50" loading="lazy" alt="grilli home">
+        </a>
+
+        <address class="body-4">
+            123 Tokyo Lane, Sushi District PH
+        </address>
+
+        <a href="mailto:
+        misushiresto@restaurant.com" class="body-4 contact-link">
+        misushiresto@restaurant.com</a>
+
+        <a href="tel:+63 123 4567 890" class="body-4 contact-link">Booking Request : +63 123 4567 890</a>
+
+        <p class="body-4">
+            Open : 09:00 am - 11:00 pm
+        </p>
+
+        <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+        </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+        <li>
+            <a href="../index.html" class="label-2 footer-link hover-underline">Home</a>
+        </li>
+
+        <li>
+            <a href="misushi_menus.html" class="label-2 footer-link hover-underline">Menus</a>
+        </li>
+
+        <li>
+            <a href="misushi_about.html" class="label-2 footer-link hover-underline">About Us</a>
+        </li>
+
+        <li>
+            <a href="misushi_gallery.html" class="label-2 footer-link hover-underline">Gallery</a>
+        </li>
+
+
+        </ul>
+
+        <ul class="footer-list">
+
+        <li>
+            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+        </li>
+
+        <li>
+            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+        </li>
+
+        <li>
+            <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+        </li>
+
+        <li>
+            <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+        </li>
+
+        </ul>
+
+    </div>
+
+    <div class="footer-bottom">
+
+    </div>
+
+    </div>
+</footer>
+
+<a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <i class="ri-arrow-up-s-line" aria-hidden="true"></i>
+</a>
+
+<!-- JS Script -->
+<script src="../assets/js/script.js"></script>
+</body>
+</html>
